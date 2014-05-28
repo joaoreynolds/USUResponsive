@@ -1,0 +1,84 @@
+//colors
+$white: #ffffff;
+$darkBlue: #0f2439;
+$aggieBlue: #1c304b;
+$lightAggieBlue: #273a54;
+$lightBlue: #586a80;
+$superLightBlue: #d7dee6;
+$lightBlueGrey: #eff2f7;
+$accent: #8c2d00; //red
+$black: #333333; //text
+
+$pageWidth: 985px;
+
+$iconSprite: 'responsive/responsiveIcons.png';
+$iconSprite2x: 'responsive/responsiveIcons@2x.png';
+
+/* --------------------------------------------
+	MIXINS
+-------------------------------------------- */
+	@mixin border-radius($radius){
+		-webkit-border-radius: $radius;
+		-moz-border-radius: $radius;
+		-ms-border-radius: $radius;
+		border-radius: $radius;
+	}
+
+	@mixin box-sizing($sizing){
+		-webkit-box-sizing: $sizing;
+		-moz-box-sizing: $sizing;
+		box-sizing: $sizing;
+	}
+
+
+/* --------------------------------------------
+	HEADER
+-------------------------------------------- */
+	#header-global{
+		min-height: 78px;
+		height:auto;
+	}
+	#header-wrapper{ max-width:$pageWidth; width:auto; }
+	#subheader-global{ min-height:50px; }
+	#navigation-bar{ max-width:$pageWidth; width:auto; }
+	.mobileHeader{ display:none; }
+
+/* --------------------------------------------
+	MAIN CONTAINER
+-------------------------------------------- */
+	#main-container-wrapper{ max-width:$pageWidth; width:auto; }
+	#subheader-shadow-wrapper{ width: 100%; }
+	.page-title-holder{ width:auto; }
+	.page-title{ width: auto; }
+/* --------------------------------------------
+	BANNERS
+-------------------------------------------- */
+	.banner-holder-wide{ 
+		max-width:$pageWidth; 
+		img{ max-width:100%; @include box-sizing(border-box); }
+	}
+
+
+
+/* --------------------------------------------
+	FOOTER
+-------------------------------------------- */
+	#footer-wrapper{
+		max-width:$pageWidth; width:auto;
+	}
+	#footer-navigation{
+		margin:0;
+		padding:25px 10px 15px;
+		@include box-sizing(border-box);
+		width:auto;
+		max-width:$pageWidth;
+	}
+	#footer-container{
+		padding:25px 10px 15px;
+		@include box-sizing(border-box);
+		width:auto;
+		max-width:$pageWidth;
+	}
+
+
+@import 'queries';
