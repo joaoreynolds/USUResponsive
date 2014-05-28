@@ -7,10 +7,10 @@ Changes to the USU template making it responsive
 ======
 
 1. Upload the following files to the server:
-	-js/responsive.script.js
-	-style/responsive.css
-	-style/responsive/* (all files)
-	-responsiveHeader.cfm
+	- js/responsive.script.js
+	- style/responsive.css
+	- style/responsive/* (all files)
+	- responsiveHeader.cfm
 2. Include the CSS file in the `<head>` section, after including `master.css`. It's recommended to include this before any custom CSS file(s) so you can make changes through your own custom file. Make sure and swap out "admissions" for your own directory.
 	
 	```html
