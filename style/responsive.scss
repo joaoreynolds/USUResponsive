@@ -57,6 +57,9 @@ $iconSprite2x: 'responsive/responsiveIcons@2x.png';
 		max-width:$pageWidth; 
 		img{ max-width:100%; @include box-sizing(border-box); }
 	}
+	.nivoSlider {
+		padding-bottom:44px;
+	}
 
 
 
