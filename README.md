@@ -11,7 +11,7 @@ Changes to the USU template making it responsive
 	- style/responsive.css
 	- style/responsive/* (all files)
 	- responsiveHeader.cfm
-2. Include the CSS file in the `<head>` section, after including `master.css`. It's recommended to include this before any custom CSS file(s) so you can make changes through your own custom file. Make sure and swap out `/admissions/` for your own directory.
+2. Include the CSS file `responsive.css` in the `<head>` section, after including `master.css`. It's recommended to include this before any custom CSS file(s) so you can make changes through your own custom file. Make sure and swap out `/admissions/` for your own directory. Make sure the `viewport` meta tag is also included somewhere in this section.
 	
 	```html
 	<head>
